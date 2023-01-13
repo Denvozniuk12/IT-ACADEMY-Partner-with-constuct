@@ -50,6 +50,8 @@ ul {
 }
 
 .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -65,6 +67,8 @@ ul {
 
 .btn:hover {
     background: rgb(231, 20, 20);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -72,6 +76,8 @@ ul {
     background-color: #586266;
     position: relative;
     top: 1px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -95,6 +101,8 @@ button span {
 
 .link:hover {
     color: #00A4E5;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -162,6 +170,8 @@ button span {
 
 .main-screen-btn-scroll-down:hover {
     background-color: rgb(231, 20, 20);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -179,20 +189,29 @@ button span {
 /* HEADER */
 .header {
     background: #FFFFFF;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 1px solid #E6E6E6;
     padding: 24px 0;
     margin-bottom: 57px;
 }
 
 .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .header-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    column-gap: 48px;
+    -webkit-column-gap: 48px;
+       -moz-column-gap: 48px;
+            column-gap: 48px;
     margin: 1px 0;
 }
 
@@ -227,6 +246,8 @@ button span {
 }
 
 .about-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -259,11 +280,16 @@ button span {
 }
 
 .about-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 28px;
     margin-left: 75px;
-    column-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
     row-gap: 20px;
 }
 
@@ -292,9 +318,14 @@ button span {
 }
 
 .services-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 76px;
 }
 
@@ -315,8 +346,12 @@ button span {
 }
 
 .services-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    column-gap: 28px;
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px;
     row-gap: 30px;
 }
 
@@ -373,8 +408,12 @@ button span {
 /* GET-IN-TOUCH */
 .get-in-touch {
     /* position: relative; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-image: url(../img/Get-in-touch/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -415,10 +454,17 @@ button span {
 }
 
 .newsletter-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .newsletter-content h2 {
@@ -433,7 +479,9 @@ button span {
 }
 
 .newsletter-content input.btn {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     max-width: 150px;
     padding: 11px 48.5px 11px 48.5px;
     font-weight: 700;
@@ -449,13 +497,21 @@ button span {
     padding: 42px 0 40px 0;
 }
 .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .footer-content-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .footer-content-blocks.company {
@@ -474,6 +530,8 @@ button span {
 }
 
 .footer-content-img {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-top: 19px;
     margin-bottom: 15px;
@@ -495,8 +553,12 @@ button span {
 }
 
 .footer-links-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    column-gap: 36px;
+    -webkit-column-gap: 36px;
+       -moz-column-gap: 36px;
+            column-gap: 36px;
     margin-top: 10px;
     padding-left: 0px;
     font-weight: 600;
@@ -507,8 +569,13 @@ button span {
 }
 
 .footer-links-blocks div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .footer-content-blocks.contact {
@@ -529,6 +596,8 @@ button span {
 
 .footer-content-blocks.contact p a:hover {
     color: #00A4E5;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -539,8 +608,13 @@ button span {
 .footer-content-blocks.socials {
     margin-top: 30px;
     margin-left: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .footer-content-blocks.socials div {
@@ -559,11 +633,15 @@ button span {
 
 .footer-content-blocks.socials div:hover {
     background-color: #00A4E5;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .footer-content-blocks.socials a img:hover {
     color: #00A4E5;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
