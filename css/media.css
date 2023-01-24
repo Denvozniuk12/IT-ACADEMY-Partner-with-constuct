@@ -194,7 +194,6 @@
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        margin-top: 30px;
         margin-left: 0px;
         -webkit-column-gap: 20px;
            -moz-column-gap: 20px;
@@ -208,6 +207,11 @@
 
     .services-heading-content {
         margin-left: 100px;
+    }
+
+    .services-heading-title {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .services-heading-title hr {
@@ -242,19 +246,15 @@
                 flex-direction: column;
     }
 
-    .services-heading-title {
-        text-align: center;
-    }
-
     .services-heading-content {
         max-width: -webkit-fit-content;
         max-width: -moz-fit-content;
         max-width: fit-content;
-        margin: 20px auto 0 auto;
+        margin: 0 auto 30px auto;
     }
 
     .services-button {
-        margin: 30px auto 0 auto;
+        margin: 0 auto;
     }
 }
 
@@ -296,7 +296,6 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin-top: 50px;
         -webkit-column-gap: 28px;
            -moz-column-gap: 28px;
                 column-gap: 28px;
@@ -311,6 +310,36 @@
 }
 
 @media (max-width: 360px) {
+
+    section.main-screen-section {
+        height: 100vh;
+        padding: 30px 0 31px 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 61px);
+    }
+
+    .menu-content {
+        margin: 0;
+    }
+
+    .main-screen-content-heading {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .main-screen-content-paragraph {
+        margin: 0;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
 
     .header-nav-elements.open .header-nav-list {
         position: fixed;
@@ -335,6 +364,14 @@
         font-weight: 600;
     }
 
+    .about {
+        margin-bottom: 50px;
+    }
+
+    .about-heading {
+        margin-bottom: 10px;
+    }
+
     .about-row {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -346,16 +383,13 @@
     }
 
     .about-content {
-        margin-top: 10px;
+        margin-bottom: 30px;
     }
 
     .about-paragraph-heading {
         font-size: 18px;
         line-height: 25px;
-    }
-
-    .about-paragraph-content {
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .about-img {
@@ -364,7 +398,6 @@
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        margin-top: 30px;
         margin-left: 0px;
         -webkit-column-gap: 14px;
            -moz-column-gap: 14px;
@@ -389,11 +422,16 @@
         color: #FFFFFF;
     }
 
+    .services {
+        margin-bottom: 50px;
+    }
+
     .services-heading {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        margin-bottom: 50px;
     }
 
     .services-heading-title {
@@ -402,11 +440,38 @@
 
     .services-heading-content {
         max-width: 328px;
-        margin: 20px 0 0 0;
     }
 
-    .services-button {
-        margin: 30px auto 0 auto;
+    .services-card {
+        max-width: 328px;
+        height: 370px;
+        padding: 42px 25px 46px;
+    }
+
+    .services-card div {
+        max-width: 75px;
+        width: 100%;
+        max-height: 83px;
+        height: 83px;
+    }
+
+    .services-card-title {
+        line-height: 27px;
+        margin-bottom: 14px;
+    }
+
+    .services-card p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .get-in-touch {
+        min-height: 350px;
+        height: 350px;
+    }
+
+    #get-in-touch-container {
+        padding-top: 30px;
     }
 
     .get-in-touch-content div {
@@ -431,6 +496,11 @@
     .footer-blocks-heading {
         font-size: 14px;
         line-height: 19px;
+    }
+
+    .footer-content-blocks.company .footer-blocks-heading {
+        font-size: 11px;
+        line-height: 15px;
     }
 
     .footer-content-blocks.links {

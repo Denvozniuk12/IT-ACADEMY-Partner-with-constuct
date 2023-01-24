@@ -3,7 +3,7 @@ var navBtn = document.querySelector("#main-screen-nav-btn");
 var buttonScrollDown = document.querySelector('.main-screen-btn-scroll-down');
 var aboutSection = document.querySelector(".about");
 var headerMobileMenu = document.querySelector(".header-nav-elements");
-var headerFixed = document.querySelector(".menu");
+var headerFixed = document.querySelector(".menu-content");
 var mainScreenSection = document.querySelector('.main-screen-section');
 
 
@@ -75,13 +75,13 @@ buttonScrollDown.addEventListener('click', function() {
 });
 
 window.addEventListener('scroll', function showHeader () {
-    if(!mediaQuery.matches)   // more than 940 px
+    if(!mediaQuery.matches)   // less than 940 px
     {
         if(window.pageYOffset >= mainScreenSection.clientHeight) {
             headerFixed.classList.add('header-fixed');
             // navBtn.style = "top: 23px; position: fixed;";
             navBtn.classList.add('btn-fixed');
-            document.body.style.paddingTop = 29 + 'px';
+           // document.body.style.paddingTop = 29 + 'px';
         }
         else
         {

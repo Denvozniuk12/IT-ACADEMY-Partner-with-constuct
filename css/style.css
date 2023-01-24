@@ -99,6 +99,10 @@ button span {
     border: 0;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
 .link:hover {
     color: #00A4E5;
     -webkit-transition: 0.3s;
@@ -121,20 +125,27 @@ button span {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 41px 0 71px 0;
+    box-sizing: border-box;
+    height: 769px;
 }
 
-.menu {
+/* .menu-content {
     margin-bottom: 305px;
+} */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 657px;
 }
 
 .main-screen-logo {
     text-align: center;
 }
 
-
 .main-screen-content {
     text-align: center;
-
 }
 
 .main-screen-content-heading {
@@ -151,7 +162,6 @@ button span {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 221px;
     color: #FFFFFF;
 }
 
@@ -285,7 +295,6 @@ button span {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 28px;
     margin-left: 75px;
     -webkit-column-gap: 20px;
        -moz-column-gap: 20px;
@@ -314,7 +323,7 @@ button span {
 
 /* SERVICES */
 .services {
-    z-index: 9;
+    margin-bottom: 115px;
 }
 
 .services-heading {
@@ -358,33 +367,24 @@ button span {
 .services-card {
     max-width: 295px;
     width: 100%;
-    padding: 38px 22px 39px 23px;
+    height: 330px;
+    padding: 38px 21px 39px 23px;
     border: 1px solid #E6E6E6;
+    box-sizing: border-box;
 }
 
 .services-card div {
     display: inline-block;
     margin-bottom: 25px;
-}
-
-.services-card div img {
+    max-width: 65px;
     max-height: 75px;
     height: 75px;
 }
 
-.services-content .services-card:first-child div img {
-    max-width: 65px;
+.services-card div img {
+    max-width: inherit;
     width: 100%;
-}
-
-.services-content .services-card:nth-child(2) div img {
-    max-width: 67px;
-    width: 100%;
-}
-
-.services-content .services-card:nth-child(3) div img {
-    max-width: 70px;
-    width: 100%;
+    height: inherit;
 }
 
 .services-card-title {
@@ -407,13 +407,6 @@ button span {
 
 /* GET-IN-TOUCH */
 .get-in-touch {
-    /* position: relative; */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background-image: url(../img/Get-in-touch/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -422,8 +415,11 @@ button span {
     height: 499px;
 }
 
+#get-in-touch-container {
+    padding-top: 120px;
+}
+
 .get-in-touch-content {
-    margin-bottom: 112px;
     text-align: center;
 }
 
@@ -433,6 +429,7 @@ button span {
 }
 
 .get-in-touch-content div h2 {
+    font-family: 'Open Sans';
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
